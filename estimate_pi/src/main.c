@@ -13,11 +13,11 @@ int main(int argc, char **argv){
 	gsl_rng_default_seed= (argc == 3) ? atoi(argv[2]) : time(NULL);
 	gsl_rng *w= gsl_rng_alloc(gsl_rng_taus);
 
-	time_t tempo= time(NULL);
-	struct tm tm= *localtime(&tempo);
-	FILE *arq= fopen("seed.dat", "a");
-	fprintf(arq, "%d.%02d.%02d_%02d:%02d:%02d_seed= %lu%c\n", tm.tm_year +1900, tm.tm_mon +1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, gsl_rng_default_seed, 59);
-	fclose(arq);
+// 	time_t tempo= time(NULL);
+// 	struct tm tm= *localtime(&tempo);
+// 	FILE *arq= fopen("seed.dat", "a");
+// 	fprintf(arq, "%d.%02d.%02d_%02d:%02d:%02d_seed= %lu%c\n", tm.tm_year +1900, tm.tm_mon +1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec, gsl_rng_default_seed, 59);
+// 	fclose(arq);
 
 	for(t= 0; t< n; t++){
 		x= gsl_rng_uniform(w)*1;
