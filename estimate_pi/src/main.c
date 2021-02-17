@@ -1,5 +1,5 @@
 //criado em				:	2020.03.03
-//ult. atualização		:	2020.03.03
+//ult. atualização			:	2021.02.17
 //autor					:	Marino <ra115114@uem.br>
 //notas					:	Calcula o valor estimado de pi pelo metodo de Monte Carlo
 
